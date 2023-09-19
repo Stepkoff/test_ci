@@ -20,8 +20,7 @@ jobs:
       - name: install modules
         run: npm install
       - name: build production project
-        run: npm run build:prod
-        if: always()
+        run: npm run build
       - name: build storybook
         run: npm run build-storybook
       - name: screenshot testing unresolved bug with new loki version with storybook 7+.
